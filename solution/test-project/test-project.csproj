@@ -1,11 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Exe</OutputType>
         <TargetFramework>net9.0</TargetFramework>
-        <RootNamespace>image_library</RootNamespace>
+        <RootNamespace>test_project</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\image-library\image-library.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="System.Drawing.Common" Version="10.0.0-preview.5.25277.114" />
